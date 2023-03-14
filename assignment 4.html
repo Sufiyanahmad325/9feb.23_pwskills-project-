@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>assignment 4</title>
+    <style>
+
+        
+        .box{
+            
+            background-color: aqua;
+            width: 700px;
+            height: 500px;
+            display: flex;
+            margin: auto;
+            justify-content: center;
+        }
+        
+        @media screen and (min-width:425px) {
+            .box{
+                background-color: rgb(231, 83, 117);
+                font-size: 50px;
+                border-radius: 15px;
+                width: 425px;
+            }
+            ::after{
+                content: this is media query demo page;
+            }
+        }
+        @media screen and (min-width:768px) {
+            .box{
+                background-color: rgb(109, 219, 202);
+                font-size: 30px;
+                border-radius: 40px;
+                width: 768px;
+            }
+            ::after{
+                content: this is media query demo page;
+            }
+        }
+
+
+        @media screen and (min-width:1024px) {
+            .box{
+                background-color: rgb(194, 210, 90);
+                font-size: 30px;
+                width: 1024px;
+            }
+            ::after{
+                content: this is media query demo page;
+            }
+        }
+
+
+        @media screen and (min-width:1404px) {
+            .box{
+                background-color: green;
+                width: 1440px;
+                font-size: 19px;
+            }
+            ::after{
+                content: this is media query demo page;
+            }
+        }
+    </style>
+</head>
+<body>
+            <div class="box">this is a media query demo page</div>
+
+</body>
+</html>
